@@ -8,7 +8,7 @@ export type ApiProfile = {
   status: 'active' | 'inactive'
 }
 
-const DEFAULT_BASE_URL = 'dashboard-clinics-backend-production.up.railway.app'
+const DEFAULT_BASE_URL = 'https://dashboard-clinics-backend-production.up.railway.app'
 const API_BASE_URL = (import.meta.env as any).VITE_API_BASE_URL || DEFAULT_BASE_URL
 
 async function apiFetch<T>(path: string, init?: RequestInit): Promise<T> {
